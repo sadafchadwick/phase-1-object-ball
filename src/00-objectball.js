@@ -54,6 +54,7 @@ function gameObject(){
                     blocks: 11,
                     slamDunks: 1,  
                 },
+        },
     },
     away: {
         teamName: "Charlotte Hornets",
@@ -108,12 +109,23 @@ function gameObject(){
                 steals: 22,
                 blocks: 5,
                 slamDunks: 12,
+             },
         },
-    },
-   }
+   },
+};
+};
+
+//console.log(gameObject());
+
+function homeTeamName() {
+    return gameObject() ["home"]["teamName"] 
+    return gameObject() ["home"]["colors"]
 }
-}}
 
-console.log(gameObject());
+console.log(homeTeamName());
 
+function awayTeamName() {
+    return gameObject() ["away"]["teamName"]
+}
 
+console.log(awayTeamName());
