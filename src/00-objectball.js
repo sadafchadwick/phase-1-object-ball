@@ -15,34 +15,64 @@ function gameObject(){
                     slamDunks: 1,
 
             }, 
-            
-            // "Reggie Evans", "Brook Lopez", "Mason Plumlee", "Jason Terry"],
-            // number: [0, 30, 11, 1, 31],
-            // shoe: [16, 14, 17, 19, 15],
-            // points: [22, 12, 17, 26, 19],
-            // rebounds: [12, 12, 19, 12,2],
-            // assists: [12, 12, 10, 6, 2],
-            // steals:[3, 12, 3, 3, 4],
-            // blocks: [1, 12, 1, 8, 11],
-            // slamDunks: [1, 7, 15, 5, 1],
-        
+    
     },
-//     away: {
-//         teamName: "Charlotte Hornets",
-//         colors: ["Turquoise", "Purple"],
-//         players: {
-//             name: ["Jeff Adrien", "Bismak Biyombo", "DeSagna Diop", "Ben Gordon", "Brendan Haywood"],
-//             number: [4, 0, 2, 8, 33],
-//             shoe: [18, 16, 14, 15, 15],
-//             points: [10, 12, 24, 33, 6],
-//             rebounds: [1, 4, 12, 3, 12],
-//             assists: [1, 7, 12, 2, 12],
-//             steals: [2, 7, 4, 1, 22],
-//             blocks: [7, 15, 5, 1, 5],
-//             slamDunks: [2, 10, 5, 0, 12],
-//         },
-//     },
-//    };
+    away: {
+        teamName: "Charlotte Hornets",
+        colors: ["Turquoise", "Purple"],
+        players: {
+            "Jeff Adrien": {
+                number: 4,
+                shoe: 18,
+                points: 10,
+                rebounds: 1,
+                assists: 1,
+                steals: 2,
+                blocks: 7,
+                slamDunks: 2,
+            }, 
+            "Bismak Biyombo": {
+                number: 0,
+                shoe: 16,
+                points: 12,
+                rebounds: 4,
+                assists: 7,
+                steals: 7,
+                blocks: 15,
+                slamDunks: 10,
+            },
+            "DeSagna Diop": {
+                number: 2,
+                shoe: 14,
+                points: 24,
+                rebounds: 12,
+                assists: 12,
+                steals: 4,
+                blocks: 5,
+                slamDunks: 5,
+            }, 
+            "Ben Gordon": {
+                number: 8,
+                shoe: 15,
+                points: 33,
+                rebounds: 3,
+                assists: 2,
+                steals: 1,
+                blocks: 1,
+                slamDunks: 0,
+            }, 
+            "Brendan Haywood": {
+                number: 33,
+                shoe: 15,
+                points: 6,
+                rebounds: 12,
+                assists: 12,
+                steals: 22,
+                blocks: 5,
+                slamDunks: 12,
+        },
+    },
+   }
 }
 }}
 
