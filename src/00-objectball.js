@@ -3,7 +3,7 @@ function gameObject(){
     home: {
         teamName: "Brooklyn Nets",
         colors: ["Black", "White"],
-        players: {
+        players: [{
                 "Alan Anderson": {
                     number: 0,
                     shoe: 16,
@@ -54,7 +54,7 @@ function gameObject(){
                     blocks: 11,
                     slamDunks: 1,  
                 },
-        },
+        },],
     },
     away: {
         teamName: "Charlotte Hornets",
@@ -115,17 +115,180 @@ function gameObject(){
 };
 };
 
-//console.log(gameObject());
-
 function homeTeamName() {
-    return gameObject() ["home"]["teamName"] 
-    return gameObject() ["home"]["colors"]
+    let object = gameObject();
+    return object["home"]["teamName"]; 
 }
-
-console.log(homeTeamName());
+//console.log(homeTeamName());
 
 function awayTeamName() {
-    return gameObject() ["away"]["teamName"]
+    return gameObject() ["away"]["teamName"];
 }
+//console.log(awayTeamName());
 
-console.log(awayTeamName());
+function teamColors (team) {
+    if (team === "Brooklyn Nets") {
+        let color = gameObject();
+        return color["home"]["colors"];
+    }
+    else {
+        let color = gameObject();
+        return color["away"]["colors"];
+    }
+}
+//console.log(teamColors());
+
+function homePlayerStats(name) {
+    let stats = gameObject()
+    if (name === "Alan Anderson") {
+        return stats["home"]["players"]["Alan Anderson"];
+    }
+    else if (name === "Reggie Evans") {
+        return stats["home"]["players"]["Reggie Evans"];
+    }
+    else if (name === "Brook Lopez") {
+        return stats["home"]["players"]["Brook Lopez"];
+    }
+    else if (name === "Mason Plumlee") {
+        return stats["home"]["players"]["Mason Plumlee"];
+    }
+    else if (name === "Jason Terry") {
+        return stats["home"]["players"]["Jason Terry"];
+    }
+    else {
+        console.log("Player unknown");
+    };  
+}
+//console.log(homePlayerStats("Alan Anderson"));
+
+function awayPlayerStats(name) {
+    let stats = gameObject()
+    if (name === "Jeff Adrien") {
+        return stats["away"]["players"]["Jeff Adrien"];
+    }
+    else if (name === "Bismak Biyombo") {
+        return stats["away"]["players"]["Bismak Biyombo"];
+    }
+    else if (name === "DeSagna Diop") {
+        return stats["away"]["players"]["DeSagna Diop"];
+    }
+    else if (name === "Ben Gordon") {
+        return stats["away"]["players"]["Ben Gordon"];
+    }
+    else if (name === "Brendan Haywood") {
+        return stats["away"]["players"]["Brendan Haywood"];
+    }
+    else {
+        console.log("Player unknown");
+    };  
+}
+//console.log(awayPlayerStats("Jeff Adrien"));
+
+function homeNumPointsScored(name) {
+    let stats = gameObject()
+    if (name === "Alan Anderson") {
+        return stats["home"]["players"]["Alan Anderson"]["points"];
+    }
+    else if (name === "Reggie Evans") {
+        return stats["home"]["players"]["Reggie Evans"]["points"];
+    }
+    else if (name === "Brook Lopez") {
+        return stats["home"]["players"]["Brook Lopez"]["points"];
+    }
+    else if (name === "Mason Plumlee") {
+        return stats["home"]["players"]["Mason Plumlee"]["points"];
+    }
+    else if (name === "Jason Terry") {
+        return stats["home"]["players"]["Jason Terry"]["points"];
+    }
+    else {
+        console.log("Player unknown");
+    };  
+}
+//console.log(homeNumPointsScored("Alan Anderson"));
+
+function awayNumPointsScored(name) {
+    let stats = gameObject()
+    if (name === "Jeff Adrien") {
+        return stats["away"]["players"]["Jeff Adrien"]["points"];
+    }
+    else if (name === "Bismak Biyombo") {
+        return stats["away"]["players"]["Bismak Biyombo"]["points"];
+    }
+    else if (name === "DeSagna Diop") {
+        return stats["away"]["players"]["DeSagna Diop"]["points"];
+    }
+    else if (name === "Ben Gordon") {
+        return stats["away"]["players"]["Ben Gordon"]["points"];
+    }
+    else if (name === "Brendan Haywood") {
+        return stats["away"]["players"]["Brendan Haywood"]["points"];
+    }
+    else {
+        console.log("Player unknown");
+    };  
+}
+//console.log(awayNumPointsScored("Jeff Adrien"));
+
+function homeShoeSize(name) {
+    let stats = gameObject()
+    if (name === "Alan Anderson") {
+        return stats["home"]["players"]["Alan Anderson"]["shoe"];
+    }
+    else if (name === "Reggie Evans") {
+        return stats["home"]["players"]["Reggie Evans"]["shoe"];
+    }
+    else if (name === "Brook Lopez") {
+        return stats["home"]["players"]["Brook Lopez"]["shoe"];
+    }
+    else if (name === "Mason Plumlee") {
+        return stats["home"]["players"]["Mason Plumlee"]["shoe"];
+    }
+    else if (name === "Jason Terry") {
+        return stats["home"]["players"]["Jason Terry"]["shoe"];
+    }
+    else {
+        console.log("Player unknown");
+    };  
+}
+//console.log(homeShoeSize("Alan Anderson"));
+
+function awayShoeSize(name) {
+    let stats = gameObject()
+    if (name === "Jeff Adrien") {
+        return stats["away"]["players"]["Jeff Adrien"]["shoe"];
+    }
+    else if (name === "Bismak Biyombo") {
+        return stats["away"]["players"]["Bismak Biyombo"]["shoe"];
+    }
+    else if (name === "DeSagna Diop") {
+        return stats["away"]["players"]["DeSagna Diop"]["shoe"];
+    }
+    else if (name === "Ben Gordon") {
+        return stats["away"]["players"]["Ben Gordon"]["shoe"];
+    }
+    else if (name === "Brendan Haywood") {
+        return stats["away"]["players"]["Brendan Haywood"]["shoe"];
+    }
+    else {
+        console.log("Player unknown");
+    };  
+}
+//console.log(awayShoeSize("Jeff Adrien"));
+
+function playerNumbers(team) {
+    let jersey = gameObject()
+    if (team === "Brooklyn Nets") {
+        for (i=0; i < players.length ; i++) {
+            return jersey(home.players[i].number)
+        } 
+    }
+    else if (team === "Charlotte Hornets") {
+        console.log("away")
+    }
+    else {
+        console.log("Team unknown")
+    }
+    return jersey ;
+};
+console.log(playerNumbers("Brooklyn Nets")); 
