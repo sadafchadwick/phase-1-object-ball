@@ -276,19 +276,40 @@ function awayShoeSize(name) {
 }
 //console.log(awayShoeSize("Jeff Adrien"));
 
-function playerNumbers(team) {
-    let jersey = gameObject()
-    if (team === "Brooklyn Nets") {
-        for (i=0; i < players.length ; i++) {
-            return jersey(home.players[i].number)
-        } 
+function playerNumber(teamName) {
+    const num = gameObject()
+    if (typeof teamName === "Brooklyn Nets") {
+      for (const colors in home) {
+        console.log(num.home.colors)
+        //playerNumber(players[teamName])
+      }
     }
-    else if (team === "Charlotte Hornets") {
-        console.log("away")
-    }
-    else {
-        console.log("Team unknown")
-    }
-    return jersey ;
-};
-console.log(playerNumbers("Brooklyn Nets")); 
+
+}
+//     else if (team === "Charlotte Hornets") {
+//         console.log("away")
+//     }
+//     else {
+//         console.log("Team unknown")
+//     }
+//     return jersey ;
+// };
+console.log(playerNumber("Brooklyn Nets")); 
+
+
+// function playerNumbers(team) {
+//     let jersey = gameObject()
+//     if (typeof team === "Brooklyn Nets") {
+//         for (i=0; i < players.length ; i++) {
+//             return jersey(home.players[i].number)
+//         } 
+//     }
+//     else if (team === "Charlotte Hornets") {
+//         console.log("away")
+//     }
+//     else {
+//         console.log("Team unknown")
+//     }
+//     return jersey ;
+// };
+// console.log(playerNumbers("Brooklyn Nets")); 
